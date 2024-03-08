@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nemo-argo
+spec:
+  selector:
+    matchLabels:
+      app: nemo-argo
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: nemo-argo
+    spec:
+      containers:
+      - name: nemo-argo
+        image: charist/argo-test:0.1
