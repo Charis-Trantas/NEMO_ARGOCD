@@ -14,4 +14,4 @@ spec:
     spec:
       containers:
       - name: nemo-argo
-        image: charist/argo_test:test-1
+        image: charist/argo_test:test-2
